@@ -51,8 +51,6 @@ async function createClients() {
     testUsers.push(fakeAdmin);
 }
 
-describe('ACL Model Collection Test', () => {
-
   describe('Default User tests on Question Collection routes', () => {
 
     it('should authorize a default user to read from /api/QA/questionCollection', async () => {
@@ -262,5 +260,4 @@ describe('ACL Model Collection Test', () => {
     });
 
   })
-})
 
