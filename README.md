@@ -18,6 +18,11 @@ The server is deployed through Heroku, allowing the API to be hit beyond the com
 
 - Initialize the package via `npm start`
 
+# Whiteboard Process 
+
+![UML](https://user-images.githubusercontent.com/90294860/161465613-a4d88c27-2385-470a-ae54-8afd85ebc925.png)
+
+
 # Features and Routes
 
 - **THE SEQUELIZE MODEL STRUCTURES AND ROUTES --> `questions` and `/answers`** :
