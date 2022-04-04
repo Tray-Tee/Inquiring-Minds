@@ -41,9 +41,6 @@ class DataCollection {
 
   async update(id, data) {
     try {
-
-    //    return await this.model.findOne({ where: { id } })
-    //     .then(record => record.update(data));
       const idNum = parseInt(id);
       let query = { where: { id: idNum }};
       let body = { name: data.name }
