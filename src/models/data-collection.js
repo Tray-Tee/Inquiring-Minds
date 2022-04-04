@@ -12,7 +12,9 @@ class DataCollection {
       let query = { where: { id: idNum }};
 
       let item = await this.model.findOne(query);
-      return item;
+
+      await this.model.get(query)
+      return item
     } catch (e) {
       console.log(e);
       return e
@@ -58,6 +60,7 @@ class DataCollection {
       let query = { where: { id: idNum }};
 
       let itemToRemove = await this.model.findOne(query);
+
       await this.model.destroy(query);
       return itemToRemove;
     } catch (e) {
